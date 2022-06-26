@@ -10,7 +10,7 @@ console.log(data);
 function createDogItemList(dog) {
 
  let dogNameLi=document.createElement("li")
- dogNameLi.className="dogListName"
+ dogNameLi.className="dogs-list__button"
  dogNameLi.textContent=dog.name
 
 let dogList=document.querySelector('.dogs-list')
