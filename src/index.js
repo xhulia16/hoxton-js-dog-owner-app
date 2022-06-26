@@ -6,41 +6,25 @@
 //- The card should have a button that toggles for the selected dog between good dog/ bad do//g
 console.log(data);
 
-//// WRITE YOUR CODE BELOW!
-//function createDogNames(dog){
 
-//    let dogNameLi1 = document.createElement("li")
-//    dogNameLi1.textContent = `${data[0].name}`
-//    dogNameLi1.className="dogName"
+function createDogItemList(dog) {
 
-//    let dogNameLi2 = document.createElement("li")
-//   dogNameLi2.textContent = `${data[1].name}`
-//   dogNameLi2.className="dogName"
+ let dogNameLi=document.createElement("li")
+ dogNameLi.className="dogListName"
+ dogNameLi.textContent=dog.name
 
-//    let dogNameLi3 = document.createElement("li")
-//    dogNameLi3.textContent = `${data[2].name}`
-//    dogNameLi3.className="dogName"//
+let dogList=document.querySelector('.dogs-list')
+dogList.append(dogNameLi)
+console.log(dogList)
+}
 
-//    let dogNameLi4 = document.createElement("li")
-//    dogNameLi4.textContent = `${data[3].name}`
-//    dogNameLi4.className="dogName"
 
-//    let dogsListUl = document.querySelector(".dogs-list")
-//    dogsListUl.append(dogNameLi1, dogNameLi2, dogNameLi3, dogNameLi4)
+for(let dog of data){
+    createDogItemList(dog) }
+
+//let dogCard = document.querySelector('.main__dog-section')
+//console.log(dogCard)
+
+//function displayDog() {
+  //  dogCard.textContent = ''
 //}
-
-//createDogNames() 
-
-let dogList = document.querySelector('.dogs-list')
-//console.log(dogList)
-
-let dogCard= document.querySelector('.main__dog-section')
-console.log(dogCard)
-
-function createDogItemList(dog){
-}
-
-function displayDog(){
-    dogCard.textContent=''
-}
-//displayDog()
